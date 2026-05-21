@@ -1,0 +1,352 @@
+Simulator report for KeyScanning
+Tue Oct 28 13:15:59 2025
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 200.0 ms     ;
+; Simulation Netlist Size     ; 121 nodes    ;
+; Simulation Coverage         ;      53.72 % ;
+; Total Number of Transitions ; 14222823     ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Vector input source                                                                        ; main.vwf   ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++-------------------------------------------------------------------------------------------------+
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ALTSYNCRAM ;
++-------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      53.72 % ;
+; Total nodes checked                                 ; 121          ;
+; Total output ports checked                          ; 121          ;
+; Total output ports with complete 1/0-value coverage ; 65           ;
+; Total output ports with no 1/0-value coverage       ; 56           ;
+; Total output ports with no 1-value coverage         ; 56           ;
+; Total output ports with no 0-value coverage         ; 56           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                              ;
++-------------------------------------------+-------------------------------------------+------------------+
+; Node Name                                 ; Output Port Name                          ; Output Port Type ;
++-------------------------------------------+-------------------------------------------+------------------+
+; |main|OSC                                 ; |main|OSC                                 ; out              ;
+; |main|ROW1                                ; |main|ROW1                                ; pin_out          ;
+; |main|inst14                              ; |main|inst14                              ; out0             ;
+; |main|ROW2                                ; |main|ROW2                                ; pin_out          ;
+; |main|ROW3                                ; |main|ROW3                                ; pin_out          ;
+; |main|ROW4                                ; |main|ROW4                                ; pin_out          ;
+; |main|ROW5                                ; |main|ROW5                                ; pin_out          ;
+; |main|ROW6                                ; |main|ROW6                                ; pin_out          ;
+; |main|ROW7                                ; |main|ROW7                                ; pin_out          ;
+; |main|ROW8                                ; |main|ROW8                                ; pin_out          ;
+; |main|80                                  ; |main|80                                  ; pin_out          ;
+; |main|81                                  ; |main|81                                  ; pin_out          ;
+; |main|82                                  ; |main|82                                  ; pin_out          ;
+; |main|74163:inst13|f74163:sub|122         ; |main|74163:inst13|f74163:sub|122         ; regout           ;
+; |main|74163:inst13|f74163:sub|126         ; |main|74163:inst13|f74163:sub|126         ; out0             ;
+; |main|74163:inst13|f74163:sub|120         ; |main|74163:inst13|f74163:sub|120         ; out0             ;
+; |main|74163:inst13|f74163:sub|106         ; |main|74163:inst13|f74163:sub|106         ; out0             ;
+; |main|74163:inst13|f74163:sub|111         ; |main|74163:inst13|f74163:sub|111         ; regout           ;
+; |main|74163:inst13|f74163:sub|115         ; |main|74163:inst13|f74163:sub|115         ; out0             ;
+; |main|74163:inst13|f74163:sub|109         ; |main|74163:inst13|f74163:sub|109         ; out0             ;
+; |main|74163:inst13|f74163:sub|74          ; |main|74163:inst13|f74163:sub|74          ; out0             ;
+; |main|74163:inst13|f74163:sub|34          ; |main|74163:inst13|f74163:sub|34          ; regout           ;
+; |main|74163:inst13|f74163:sub|68          ; |main|74163:inst13|f74163:sub|68          ; out0             ;
+; |main|74138:inst25|22                     ; |main|74138:inst25|22                     ; out0             ;
+; |main|74138:inst25|21                     ; |main|74138:inst25|21                     ; out0             ;
+; |main|74138:inst25|20                     ; |main|74138:inst25|20                     ; out0             ;
+; |main|74138:inst25|19                     ; |main|74138:inst25|19                     ; out0             ;
+; |main|74138:inst25|18                     ; |main|74138:inst25|18                     ; out0             ;
+; |main|74138:inst25|17                     ; |main|74138:inst25|17                     ; out0             ;
+; |main|74138:inst25|16                     ; |main|74138:inst25|16                     ; out0             ;
+; |main|74138:inst25|15                     ; |main|74138:inst25|15                     ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst5|11 ; |main|FrequencyDivider:inst|7490:inst5|11 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst5|31 ; |main|FrequencyDivider:inst|7490:inst5|31 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst5|19 ; |main|FrequencyDivider:inst|7490:inst5|19 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst5|30 ; |main|FrequencyDivider:inst|7490:inst5|30 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst5|14 ; |main|FrequencyDivider:inst|7490:inst5|14 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst5|16 ; |main|FrequencyDivider:inst|7490:inst5|16 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst4|7  ; |main|FrequencyDivider:inst|7490:inst4|7  ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst4|11 ; |main|FrequencyDivider:inst|7490:inst4|11 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst4|31 ; |main|FrequencyDivider:inst|7490:inst4|31 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst4|19 ; |main|FrequencyDivider:inst|7490:inst4|19 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst4|30 ; |main|FrequencyDivider:inst|7490:inst4|30 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst4|14 ; |main|FrequencyDivider:inst|7490:inst4|14 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst4|16 ; |main|FrequencyDivider:inst|7490:inst4|16 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst3|7  ; |main|FrequencyDivider:inst|7490:inst3|7  ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst3|11 ; |main|FrequencyDivider:inst|7490:inst3|11 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst3|31 ; |main|FrequencyDivider:inst|7490:inst3|31 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst3|19 ; |main|FrequencyDivider:inst|7490:inst3|19 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst3|30 ; |main|FrequencyDivider:inst|7490:inst3|30 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst3|14 ; |main|FrequencyDivider:inst|7490:inst3|14 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst3|16 ; |main|FrequencyDivider:inst|7490:inst3|16 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst2|7  ; |main|FrequencyDivider:inst|7490:inst2|7  ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst2|11 ; |main|FrequencyDivider:inst|7490:inst2|11 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst2|31 ; |main|FrequencyDivider:inst|7490:inst2|31 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst2|19 ; |main|FrequencyDivider:inst|7490:inst2|19 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst2|30 ; |main|FrequencyDivider:inst|7490:inst2|30 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst2|14 ; |main|FrequencyDivider:inst|7490:inst2|14 ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst2|16 ; |main|FrequencyDivider:inst|7490:inst2|16 ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst|7   ; |main|FrequencyDivider:inst|7490:inst|7   ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst|11  ; |main|FrequencyDivider:inst|7490:inst|11  ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst|31  ; |main|FrequencyDivider:inst|7490:inst|31  ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst|19  ; |main|FrequencyDivider:inst|7490:inst|19  ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst|30  ; |main|FrequencyDivider:inst|7490:inst|30  ; out0             ;
+; |main|FrequencyDivider:inst|7490:inst|14  ; |main|FrequencyDivider:inst|7490:inst|14  ; regout           ;
+; |main|FrequencyDivider:inst|7490:inst|16  ; |main|FrequencyDivider:inst|7490:inst|16  ; out0             ;
++-------------------------------------------+-------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                         ; Output Port Name                                                                            ; Output Port Type ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |main|DE1                                                                                         ; |main|DE1                                                                                   ; pin_out          ;
+; |main|inst7                                                                                       ; |main|inst7                                                                                 ; out0             ;
+; |main|PK3_                                                                                        ; |main|PK3_                                                                                  ; out              ;
+; |main|PK2_                                                                                        ; |main|PK2_                                                                                  ; out              ;
+; |main|PK1_                                                                                        ; |main|PK1_                                                                                  ; out              ;
+; |main|inst4                                                                                       ; |main|inst4                                                                                 ; out0             ;
+; |main|DE2                                                                                         ; |main|DE2                                                                                   ; pin_out          ;
+; |main|DE3                                                                                         ; |main|DE3                                                                                   ; pin_out          ;
+; |main|ACOM                                                                                        ; |main|ACOM                                                                                  ; pin_out          ;
+; |main|LED12                                                                                       ; |main|LED12                                                                                 ; pin_out          ;
+; |main|C1                                                                                          ; |main|C1                                                                                    ; pin_out          ;
+; |main|C2                                                                                          ; |main|C2                                                                                    ; pin_out          ;
+; |main|C3                                                                                          ; |main|C3                                                                                    ; pin_out          ;
+; |main|C4                                                                                          ; |main|C4                                                                                    ; pin_out          ;
+; |main|C5                                                                                          ; |main|C5                                                                                    ; pin_out          ;
+; |main|C6                                                                                          ; |main|C6                                                                                    ; pin_out          ;
+; |main|C7                                                                                          ; |main|C7                                                                                    ; pin_out          ;
+; |main|C8                                                                                          ; |main|C8                                                                                    ; pin_out          ;
+; |main|74175:inst18|16                                                                             ; |main|74175:inst18|16                                                                       ; regout           ;
+; |main|74175:inst18|15                                                                             ; |main|74175:inst18|15                                                                       ; regout           ;
+; |main|74175:inst18|14                                                                             ; |main|74175:inst18|14                                                                       ; regout           ;
+; |main|74175:inst18|13                                                                             ; |main|74175:inst18|13                                                                       ; regout           ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a0 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[0] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a1 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[1] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a2 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[2] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a3 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[3] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a4 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[4] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a5 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[5] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a6 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[6] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a7 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[7] ; portadataout0    ;
+; |main|74153M:inst8|9                                                                              ; |main|74153M:inst8|9                                                                        ; out0             ;
+; |main|74153M:inst8|1                                                                              ; |main|74153M:inst8|1                                                                        ; out0             ;
+; |main|74153M:inst8|2                                                                              ; |main|74153M:inst8|2                                                                        ; out0             ;
+; |main|74153M:inst8|3                                                                              ; |main|74153M:inst8|3                                                                        ; out0             ;
+; |main|74153M:inst8|4                                                                              ; |main|74153M:inst8|4                                                                        ; out0             ;
+; |main|7474:inst5|9                                                                                ; |main|7474:inst5|9                                                                          ; regout           ;
+; |main|7474:inst5|10                                                                               ; |main|7474:inst5|10                                                                         ; regout           ;
+; |main|74163:inst1|f74163:sub|134                                                                  ; |main|74163:inst1|f74163:sub|134                                                            ; regout           ;
+; |main|74163:inst1|f74163:sub|137                                                                  ; |main|74163:inst1|f74163:sub|137                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|131                                                                  ; |main|74163:inst1|f74163:sub|131                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|130                                                                  ; |main|74163:inst1|f74163:sub|130                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|117                                                                  ; |main|74163:inst1|f74163:sub|117                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|122                                                                  ; |main|74163:inst1|f74163:sub|122                                                            ; regout           ;
+; |main|74163:inst1|f74163:sub|126                                                                  ; |main|74163:inst1|f74163:sub|126                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|120                                                                  ; |main|74163:inst1|f74163:sub|120                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|119                                                                  ; |main|74163:inst1|f74163:sub|119                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|106                                                                  ; |main|74163:inst1|f74163:sub|106                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|111                                                                  ; |main|74163:inst1|f74163:sub|111                                                            ; regout           ;
+; |main|74163:inst1|f74163:sub|115                                                                  ; |main|74163:inst1|f74163:sub|115                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|109                                                                  ; |main|74163:inst1|f74163:sub|109                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|108                                                                  ; |main|74163:inst1|f74163:sub|108                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|73                                                                   ; |main|74163:inst1|f74163:sub|73                                                             ; out0             ;
+; |main|74163:inst1|f74163:sub|34                                                                   ; |main|74163:inst1|f74163:sub|34                                                             ; regout           ;
+; |main|74163:inst1|f74163:sub|68                                                                   ; |main|74163:inst1|f74163:sub|68                                                             ; out0             ;
+; |main|74163:inst1|f74163:sub|72                                                                   ; |main|74163:inst1|f74163:sub|72                                                             ; out0             ;
+; |main|74163:inst1|f74163:sub|105                                                                  ; |main|74163:inst1|f74163:sub|105                                                            ; out0             ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                         ; Output Port Name                                                                            ; Output Port Type ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+; |main|DE1                                                                                         ; |main|DE1                                                                                   ; pin_out          ;
+; |main|inst7                                                                                       ; |main|inst7                                                                                 ; out0             ;
+; |main|PK3_                                                                                        ; |main|PK3_                                                                                  ; out              ;
+; |main|PK2_                                                                                        ; |main|PK2_                                                                                  ; out              ;
+; |main|PK1_                                                                                        ; |main|PK1_                                                                                  ; out              ;
+; |main|inst4                                                                                       ; |main|inst4                                                                                 ; out0             ;
+; |main|DE2                                                                                         ; |main|DE2                                                                                   ; pin_out          ;
+; |main|DE3                                                                                         ; |main|DE3                                                                                   ; pin_out          ;
+; |main|ACOM                                                                                        ; |main|ACOM                                                                                  ; pin_out          ;
+; |main|LED12                                                                                       ; |main|LED12                                                                                 ; pin_out          ;
+; |main|C1                                                                                          ; |main|C1                                                                                    ; pin_out          ;
+; |main|C2                                                                                          ; |main|C2                                                                                    ; pin_out          ;
+; |main|C3                                                                                          ; |main|C3                                                                                    ; pin_out          ;
+; |main|C4                                                                                          ; |main|C4                                                                                    ; pin_out          ;
+; |main|C5                                                                                          ; |main|C5                                                                                    ; pin_out          ;
+; |main|C6                                                                                          ; |main|C6                                                                                    ; pin_out          ;
+; |main|C7                                                                                          ; |main|C7                                                                                    ; pin_out          ;
+; |main|C8                                                                                          ; |main|C8                                                                                    ; pin_out          ;
+; |main|74175:inst18|16                                                                             ; |main|74175:inst18|16                                                                       ; regout           ;
+; |main|74175:inst18|15                                                                             ; |main|74175:inst18|15                                                                       ; regout           ;
+; |main|74175:inst18|14                                                                             ; |main|74175:inst18|14                                                                       ; regout           ;
+; |main|74175:inst18|13                                                                             ; |main|74175:inst18|13                                                                       ; regout           ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a0 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[0] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a1 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[1] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a2 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[2] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a3 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[3] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a4 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[4] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a5 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[5] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a6 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[6] ; portadataout0    ;
+; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|ram_block1a7 ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_u541:auto_generated|q_a[7] ; portadataout0    ;
+; |main|74153M:inst8|9                                                                              ; |main|74153M:inst8|9                                                                        ; out0             ;
+; |main|74153M:inst8|1                                                                              ; |main|74153M:inst8|1                                                                        ; out0             ;
+; |main|74153M:inst8|2                                                                              ; |main|74153M:inst8|2                                                                        ; out0             ;
+; |main|74153M:inst8|3                                                                              ; |main|74153M:inst8|3                                                                        ; out0             ;
+; |main|74153M:inst8|4                                                                              ; |main|74153M:inst8|4                                                                        ; out0             ;
+; |main|7474:inst5|9                                                                                ; |main|7474:inst5|9                                                                          ; regout           ;
+; |main|7474:inst5|10                                                                               ; |main|7474:inst5|10                                                                         ; regout           ;
+; |main|74163:inst1|f74163:sub|134                                                                  ; |main|74163:inst1|f74163:sub|134                                                            ; regout           ;
+; |main|74163:inst1|f74163:sub|137                                                                  ; |main|74163:inst1|f74163:sub|137                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|131                                                                  ; |main|74163:inst1|f74163:sub|131                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|130                                                                  ; |main|74163:inst1|f74163:sub|130                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|117                                                                  ; |main|74163:inst1|f74163:sub|117                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|122                                                                  ; |main|74163:inst1|f74163:sub|122                                                            ; regout           ;
+; |main|74163:inst1|f74163:sub|126                                                                  ; |main|74163:inst1|f74163:sub|126                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|120                                                                  ; |main|74163:inst1|f74163:sub|120                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|119                                                                  ; |main|74163:inst1|f74163:sub|119                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|106                                                                  ; |main|74163:inst1|f74163:sub|106                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|111                                                                  ; |main|74163:inst1|f74163:sub|111                                                            ; regout           ;
+; |main|74163:inst1|f74163:sub|115                                                                  ; |main|74163:inst1|f74163:sub|115                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|109                                                                  ; |main|74163:inst1|f74163:sub|109                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|108                                                                  ; |main|74163:inst1|f74163:sub|108                                                            ; out0             ;
+; |main|74163:inst1|f74163:sub|73                                                                   ; |main|74163:inst1|f74163:sub|73                                                             ; out0             ;
+; |main|74163:inst1|f74163:sub|34                                                                   ; |main|74163:inst1|f74163:sub|34                                                             ; regout           ;
+; |main|74163:inst1|f74163:sub|68                                                                   ; |main|74163:inst1|f74163:sub|68                                                             ; out0             ;
+; |main|74163:inst1|f74163:sub|72                                                                   ; |main|74163:inst1|f74163:sub|72                                                             ; out0             ;
+; |main|74163:inst1|f74163:sub|105                                                                  ; |main|74163:inst1|f74163:sub|105                                                            ; out0             ;
++---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Tue Oct 28 13:15:01 2025
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off KeyScanning -c KeyScanning
+Info: Using vector source file "C:/Users/Ma Yuxuan/Desktop/KeyScanning/main.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of main.vwf called KeyScanning.sim_ori.vwf has been created in the db folder
+Warning: Can't find signal in vector source file for input pin "|main|PK3_"
+Warning: Can't find signal in vector source file for input pin "|main|PK2_"
+Warning: Can't find signal in vector source file for input pin "|main|PK1_"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      53.72 %
+Info: Number of transitions in simulation is 14222823
+Info: Vector file main.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 3 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Tue Oct 28 13:15:59 2025
+    Info: Elapsed time: 00:00:58
+    Info: Total CPU time (on all processors): 00:00:57
+
+

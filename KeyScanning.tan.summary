@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : -0.587 ns
+From           : SW7
+To             : Key:inst137|7474:inst|9
+From Clock     : --
+To Clock       : OSC
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 54.149 ns
+From           : 74161:inst73|f74161:sub|87
+To             : C3
+From Clock     : OSC
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 20.892 ns
+From           : SW5
+To             : Key:inst139|7474:inst|9
+From Clock     : --
+To Clock       : OSC
+Failed Paths   : 0
+
+Type           : Clock Setup: 'OSC'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 23.66 MHz ( period = 42.257 ns )
+From           : 74161:inst155|f74161:sub|110
+To             : lpm_rom2:inst51|altsyncram:altsyncram_component|altsyncram_tq21:auto_generated|ram_block1a0~porta_address_reg6
+From Clock     : OSC
+To Clock       : OSC
+Failed Paths   : 0
+
+Type           : Clock Hold: 'OSC'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : Key:inst50|7474:inst|9
+To             : 74163:inst151|f74163:sub|134
+From Clock     : OSC
+To Clock       : OSC
+Failed Paths   : 39
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 39
+
+--------------------------------------------------------------------------------------
+

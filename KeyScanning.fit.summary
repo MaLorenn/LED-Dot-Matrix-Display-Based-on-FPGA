@@ -1,0 +1,12 @@
+Fitter Status : Successful - Fri Nov 14 12:35:30 2025
+Quartus II Version : 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition
+Revision Name : KeyScanning
+Top-level Entity Name : main
+Family : Cyclone
+Device : EP1C3T144C8
+Timing Models : Final
+Total logic elements : 245 / 2,910 ( 8 % )
+Total pins : 41 / 104 ( 39 % )
+Total virtual pins : 0
+Total memory bits : 8,192 / 59,904 ( 14 % )
+Total PLLs : 0 / 1 ( 0 % )

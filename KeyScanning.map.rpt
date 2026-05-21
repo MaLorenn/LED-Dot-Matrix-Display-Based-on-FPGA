@@ -1,0 +1,1421 @@
+Analysis & Synthesis report for KeyScanning
+Fri Nov 14 12:35:28 2025
+Quartus II Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. Analysis & Synthesis RAM Summary
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Source assignments for lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_v231:auto_generated
+ 11. Source assignments for lpm_rom1:inst48|altsyncram:altsyncram_component|altsyncram_sm31:auto_generated
+ 12. Source assignments for lpm_rom2:inst51|altsyncram:altsyncram_component|altsyncram_tq21:auto_generated
+ 13. Source assignments for lpm_rom3:inst152|altsyncram:altsyncram_component|altsyncram_j031:auto_generated
+ 14. Parameter Settings for User Entity Instance: 74163:inst1
+ 15. Parameter Settings for User Entity Instance: BUSMUX:inst140
+ 16. Parameter Settings for User Entity Instance: 74283:inst13
+ 17. Parameter Settings for User Entity Instance: 74161:inst49
+ 18. Parameter Settings for User Entity Instance: 74161:inst38
+ 19. Parameter Settings for User Entity Instance: 74283:inst126
+ 20. Parameter Settings for User Entity Instance: 74161:inst122
+ 21. Parameter Settings for User Entity Instance: BUSMUX:inst53
+ 22. Parameter Settings for User Entity Instance: 74151:inst78
+ 23. Parameter Settings for User Entity Instance: BUSMUX:inst129
+ 24. Parameter Settings for User Entity Instance: 74161:inst73
+ 25. Parameter Settings for User Entity Instance: 74283:inst144
+ 26. Parameter Settings for User Entity Instance: BUSMUX:inst112
+ 27. Parameter Settings for User Entity Instance: BUSMUX:inst36
+ 28. Parameter Settings for User Entity Instance: BUSMUX:inst52
+ 29. Parameter Settings for User Entity Instance: lpm_rom0:inst17
+ 30. Parameter Settings for User Entity Instance: lpm_rom0:inst17|altsyncram:altsyncram_component
+ 31. Parameter Settings for User Entity Instance: BUSMUX:inst162
+ 32. Parameter Settings for User Entity Instance: 74161:inst155
+ 33. Parameter Settings for User Entity Instance: lpm_rom1:inst48
+ 34. Parameter Settings for User Entity Instance: lpm_rom1:inst48|altsyncram:altsyncram_component
+ 35. Parameter Settings for User Entity Instance: lpm_rom2:inst51
+ 36. Parameter Settings for User Entity Instance: lpm_rom2:inst51|altsyncram:altsyncram_component
+ 37. Parameter Settings for User Entity Instance: lpm_rom3:inst152
+ 38. Parameter Settings for User Entity Instance: lpm_rom3:inst152|altsyncram:altsyncram_component
+ 39. Parameter Settings for User Entity Instance: 74163:inst151
+ 40. Parameter Settings for User Entity Instance: BUSMUX:inst55
+ 41. Parameter Settings for User Entity Instance: 74151:inst79
+ 42. Parameter Settings for User Entity Instance: BUSMUX:inst72
+ 43. Parameter Settings for User Entity Instance: 74151:inst80
+ 44. Parameter Settings for User Entity Instance: BUSMUX:inst103
+ 45. Parameter Settings for User Entity Instance: 74151:inst81
+ 46. Parameter Settings for User Entity Instance: BUSMUX:inst104
+ 47. Parameter Settings for User Entity Instance: 74151:inst82
+ 48. Parameter Settings for User Entity Instance: BUSMUX:inst105
+ 49. Parameter Settings for User Entity Instance: 74151:inst83
+ 50. Parameter Settings for User Entity Instance: BUSMUX:inst106
+ 51. Parameter Settings for User Entity Instance: 74151:inst84
+ 52. Parameter Settings for User Entity Instance: BUSMUX:inst107
+ 53. Parameter Settings for User Entity Instance: 74151:inst85
+ 54. altsyncram Parameter Settings by Entity Instance
+ 55. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++----------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                               ;
++-----------------------------+----------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Fri Nov 14 12:35:28 2025        ;
+; Quartus II Version          ; 9.0 Build 235 06/17/2009 SP 2 SJ Web Edition ;
+; Revision Name               ; KeyScanning                                  ;
+; Top-level Entity Name       ; main                                         ;
+; Family                      ; Cyclone                                      ;
+; Total logic elements        ; 259                                          ;
+; Total pins                  ; 41                                           ;
+; Total virtual pins          ; 0                                            ;
+; Total memory bits           ; 8,192                                        ;
+; Total PLLs                  ; 0                                            ;
++-----------------------------+----------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                          ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Option                                                       ; Setting            ; Default Value      ;
++--------------------------------------------------------------+--------------------+--------------------+
+; Device                                                       ; EP1C3T144C8        ;                    ;
+; Top-level entity name                                        ; main               ; KeyScanning        ;
+; Family name                                                  ; Cyclone            ; Stratix II         ;
+; Use Generated Physical Constraints File                      ; Off                ;                    ;
+; Use smart compilation                                        ; Off                ; Off                ;
+; Restructure Multiplexers                                     ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                          ; Off                ; Off                ;
+; Preserve fewer node names                                    ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                    ; Off                ; Off                ;
+; Verilog Version                                              ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                 ; VHDL93             ; VHDL93             ;
+; State Machine Processing                                     ; Auto               ; Auto               ;
+; Safe State Machine                                           ; Off                ; Off                ;
+; Extract Verilog State Machines                               ; On                 ; On                 ;
+; Extract VHDL State Machines                                  ; On                 ; On                 ;
+; Ignore Verilog initial constructs                            ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                   ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops               ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                      ; On                 ; On                 ;
+; Parallel Synthesis                                           ; Off                ; Off                ;
+; NOT Gate Push-Back                                           ; On                 ; On                 ;
+; Power-Up Don't Care                                          ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                 ; Off                ; Off                ;
+; Remove Duplicate Registers                                   ; On                 ; On                 ;
+; Ignore CARRY Buffers                                         ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                       ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                    ; Off                ; Off                ;
+; Ignore LCELL Buffers                                         ; Off                ; Off                ;
+; Ignore SOFT Buffers                                          ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                               ; Off                ; Off                ;
+; Optimization Technique                                       ; Balanced           ; Balanced           ;
+; Carry Chain Length                                           ; 70                 ; 70                 ;
+; Auto Carry Chains                                            ; On                 ; On                 ;
+; Auto Open-Drain Pins                                         ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                        ; Off                ; Off                ;
+; Auto ROM Replacement                                         ; On                 ; On                 ;
+; Auto RAM Replacement                                         ; On                 ; On                 ;
+; Auto Shift Register Replacement                              ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                ; On                 ; On                 ;
+; Strict RAM Replacement                                       ; Off                ; Off                ;
+; Allow Synchronous Control Signals                            ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                       ; Off                ; Off                ;
+; Auto RAM Block Balancing                                     ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                            ; Off                ; Off                ;
+; Auto Resource Sharing                                        ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                           ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing          ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives            ; Off                ; Off                ;
+; Show Parameter Settings Tables in Synthesis Report           ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                           ; Off                ; Off                ;
+; Synchronization Register Chain Length                        ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                 ; Normal compilation ; Normal compilation ;
+; HDL message level                                            ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages              ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report     ; 100                ; 100                ;
+; Number of Inverted Registers Reported in Synthesis Report    ; 100                ; 100                ;
+; Clock MUX Protection                                         ; On                 ; On                 ;
+; Block Design Naming                                          ; Auto               ; Auto               ;
+; Synthesis Effort                                             ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                           ; Medium             ; Medium             ;
++--------------------------------------------------------------+--------------------+--------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                              ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                              ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+
+; FrequencyDivider.bdf             ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/FrequencyDivider.bdf   ;
+; main.bdf                         ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/main.bdf               ;
+; Key.bdf                          ; yes             ; User Block Diagram/Schematic File  ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/Key.bdf                ;
+; 74163.tdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74163.tdf                    ;
+; aglobal.inc                      ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/aglobal.inc                    ;
+; f74163.bdf                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/f74163.bdf                   ;
+; 7474.bdf                         ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/7474.bdf                     ;
+; 7490.bdf                         ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/7490.bdf                     ;
+; 74138.bdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74138.bdf                    ;
+; BUSMUX.tdf                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/BUSMUX.tdf                     ;
+; lpm_mux.inc                      ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/lpm_mux.inc                    ;
+; lpm_mux.tdf                      ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/lpm_mux.tdf                    ;
+; aglobal90.inc                    ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/aglobal90.inc                  ;
+; muxlut.inc                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/muxlut.inc                     ;
+; bypassff.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/bypassff.inc                   ;
+; altshift.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altshift.inc                   ;
+; db/mux_5fc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/db/mux_5fc.tdf         ;
+; 74283.tdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74283.tdf                    ;
+; f74283.bdf                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/f74283.bdf                   ;
+; 74161.tdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74161.tdf                    ;
+; f74161.bdf                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/f74161.bdf                   ;
+; db/mux_3fc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/db/mux_3fc.tdf         ;
+; 74151.tdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74151.tdf                    ;
+; f74151.bdf                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/f74151.bdf                   ;
+; db/mux_pgc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/db/mux_pgc.tdf         ;
+; lpm_rom0.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/lpm_rom0.tdf           ;
+; altsyncram.inc                   ; yes             ; Auto-Found AHDL File               ; d:/quartus/quartus/libraries/megafunctions/altsyncram.inc                 ;
+; altsyncram.tdf                   ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altsyncram.tdf                 ;
+; stratix_ram_block.inc            ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/stratix_ram_block.inc          ;
+; lpm_decode.inc                   ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/lpm_decode.inc                 ;
+; a_rdenreg.inc                    ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/a_rdenreg.inc                  ;
+; altrom.inc                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altrom.inc                     ;
+; altram.inc                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altram.inc                     ;
+; altdpram.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altdpram.inc                   ;
+; altqpram.inc                     ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/megafunctions/altqpram.inc                   ;
+; db/altsyncram_v231.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/db/altsyncram_v231.tdf ;
+; db/mux_6fc.tdf                   ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/db/mux_6fc.tdf         ;
+; 74175.bdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74175.bdf                    ;
+; 74148.bdf                        ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/74148.bdf                    ;
+; lpm_rom1.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/lpm_rom1.tdf           ;
+; db/altsyncram_sm31.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/db/altsyncram_sm31.tdf ;
+; lpm_rom2.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/lpm_rom2.tdf           ;
+; db/altsyncram_tq21.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/db/altsyncram_tq21.tdf ;
+; lpm_rom3.tdf                     ; yes             ; Auto-Found Wizard-Generated File   ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/lpm_rom3.tdf           ;
+; db/altsyncram_j031.tdf           ; yes             ; Auto-Generated Megafunction        ; C:/Users/Ma Yuxuan/Desktop/KeyScanning -最终优化版/db/altsyncram_j031.tdf ;
+; 161mux.bdf                       ; yes             ; Megafunction                       ; d:/quartus/quartus/libraries/others/maxplus2/161mux.bdf                   ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                              ;
++---------------------------------------------+----------------------------+
+; Resource                                    ; Usage                      ;
++---------------------------------------------+----------------------------+
+; Total logic elements                        ; 259                        ;
+;     -- Combinational with no register       ; 174                        ;
+;     -- Register only                        ; 20                         ;
+;     -- Combinational with a register        ; 65                         ;
+;                                             ;                            ;
+; Logic element usage by number of LUT inputs ;                            ;
+;     -- 4 input functions                    ; 136                        ;
+;     -- 3 input functions                    ; 20                         ;
+;     -- 2 input functions                    ; 61                         ;
+;     -- 1 input functions                    ; 22                         ;
+;     -- 0 input functions                    ; 0                          ;
+;                                             ;                            ;
+; Logic elements by mode                      ;                            ;
+;     -- normal mode                          ; 245                        ;
+;     -- arithmetic mode                      ; 14                         ;
+;     -- qfbk mode                            ; 0                          ;
+;     -- register cascade mode                ; 0                          ;
+;     -- synchronous clear/load mode          ; 0                          ;
+;     -- asynchronous clear/load mode         ; 19                         ;
+;                                             ;                            ;
+; Total registers                             ; 85                         ;
+; Total logic cells in carry chains           ; 19                         ;
+; I/O pins                                    ; 41                         ;
+; Total memory bits                           ; 8192                       ;
+; Maximum fan-out node                        ; 74161:inst38|f74161:sub|87 ;
+; Maximum fan-out                             ; 71                         ;
+; Total fan-out                               ; 1412                       ;
+; Average fan-out                             ; 3.88                       ;
++---------------------------------------------+----------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                    ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                ; Logic Cells ; LC Registers ; Memory Bits ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                                                   ; Library Name ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+--------------+
+; |main                                     ; 259 (36)    ; 85           ; 8192        ; 41   ; 0            ; 174 (36)     ; 20 (0)            ; 65 (0)           ; 19 (0)          ; 0 (0)      ; |main                                                                                 ; work         ;
+;    |161mux:inst94|                        ; 8 (8)       ; 0            ; 0           ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|161mux:inst94                                                                   ; work         ;
+;    |161mux:inst96|                        ; 8 (8)       ; 0            ; 0           ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|161mux:inst96                                                                   ; work         ;
+;    |161mux:inst97|                        ; 8 (8)       ; 0            ; 0           ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|161mux:inst97                                                                   ; work         ;
+;    |161mux:inst98|                        ; 8 (8)       ; 0            ; 0           ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|161mux:inst98                                                                   ; work         ;
+;    |74138:inst25|                         ; 8 (8)       ; 0            ; 0           ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74138:inst25                                                                    ; work         ;
+;    |74151:inst78|                         ; 4 (0)       ; 0            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74151:inst78                                                                    ; work         ;
+;       |f74151:sub|                        ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74151:inst78|f74151:sub                                                         ; work         ;
+;    |74151:inst79|                         ; 4 (0)       ; 0            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74151:inst79                                                                    ; work         ;
+;       |f74151:sub|                        ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74151:inst79|f74151:sub                                                         ; work         ;
+;    |74151:inst80|                         ; 4 (0)       ; 0            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74151:inst80                                                                    ; work         ;
+;       |f74151:sub|                        ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74151:inst80|f74151:sub                                                         ; work         ;
+;    |74151:inst81|                         ; 4 (0)       ; 0            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74151:inst81                                                                    ; work         ;
+;       |f74151:sub|                        ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74151:inst81|f74151:sub                                                         ; work         ;
+;    |74161:inst122|                        ; 4 (0)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |main|74161:inst122                                                                   ; work         ;
+;       |f74161:sub|                        ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |main|74161:inst122|f74161:sub                                                        ; work         ;
+;    |74161:inst155|                        ; 4 (0)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |main|74161:inst155                                                                   ; work         ;
+;       |f74161:sub|                        ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |main|74161:inst155|f74161:sub                                                        ; work         ;
+;    |74161:inst38|                         ; 3 (0)       ; 3            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (0)            ; 3 (0)           ; 0 (0)      ; |main|74161:inst38                                                                    ; work         ;
+;       |f74161:sub|                        ; 3 (3)       ; 3            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 3 (3)           ; 0 (0)      ; |main|74161:inst38|f74161:sub                                                         ; work         ;
+;    |74161:inst49|                         ; 4 (0)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |main|74161:inst49                                                                    ; work         ;
+;       |f74161:sub|                        ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |main|74161:inst49|f74161:sub                                                         ; work         ;
+;    |74161:inst73|                         ; 5 (0)       ; 4            ; 0           ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 4 (0)            ; 4 (0)           ; 0 (0)      ; |main|74161:inst73                                                                    ; work         ;
+;       |f74161:sub|                        ; 5 (5)       ; 4            ; 0           ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 4 (4)            ; 4 (4)           ; 0 (0)      ; |main|74161:inst73|f74161:sub                                                         ; work         ;
+;    |74163:inst151|                        ; 8 (0)       ; 4            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 4 (0)            ; 0 (0)           ; 0 (0)      ; |main|74163:inst151                                                                   ; work         ;
+;       |f74163:sub|                        ; 8 (8)       ; 4            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|74163:inst151|f74163:sub                                                        ; work         ;
+;    |74163:inst1|                          ; 7 (0)       ; 3            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 3 (0)            ; 0 (0)           ; 0 (0)      ; |main|74163:inst1                                                                     ; work         ;
+;       |f74163:sub|                        ; 7 (7)       ; 3            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |main|74163:inst1|f74163:sub                                                          ; work         ;
+;    |74175:inst18|                         ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|74175:inst18                                                                    ; work         ;
+;    |74175:inst37|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |main|74175:inst37                                                                    ; work         ;
+;    |74283:inst126|                        ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74283:inst126                                                                   ; work         ;
+;       |f74283:sub|                        ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74283:inst126|f74283:sub                                                        ; work         ;
+;    |74283:inst13|                         ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74283:inst13                                                                    ; work         ;
+;       |f74283:sub|                        ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74283:inst13|f74283:sub                                                         ; work         ;
+;    |74283:inst144|                        ; 1 (0)       ; 0            ; 0           ; 0    ; 0            ; 1 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74283:inst144                                                                   ; work         ;
+;       |f74283:sub|                        ; 1 (1)       ; 0            ; 0           ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|74283:inst144|f74283:sub                                                        ; work         ;
+;    |FrequencyDivider:inst|                ; 31 (0)      ; 31           ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 31 (0)           ; 0 (0)           ; 0 (0)      ; |main|FrequencyDivider:inst                                                           ; work         ;
+;       |7490:inst2|                        ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|FrequencyDivider:inst|7490:inst2                                                ; work         ;
+;       |7490:inst3|                        ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|FrequencyDivider:inst|7490:inst3                                                ; work         ;
+;       |7490:inst4|                        ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|FrequencyDivider:inst|7490:inst4                                                ; work         ;
+;       |7490:inst5|                        ; 3 (3)       ; 3            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 3 (3)            ; 0 (0)           ; 0 (0)      ; |main|FrequencyDivider:inst|7490:inst5                                                ; work         ;
+;       |7490:inst6|                        ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|FrequencyDivider:inst|7490:inst6                                                ; work         ;
+;       |7490:inst7|                        ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|FrequencyDivider:inst|7490:inst7                                                ; work         ;
+;       |7490:inst8|                        ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|FrequencyDivider:inst|7490:inst8                                                ; work         ;
+;       |7490:inst|                         ; 4 (4)       ; 4            ; 0           ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 4 (4)            ; 0 (0)           ; 0 (0)      ; |main|FrequencyDivider:inst|7490:inst                                                 ; work         ;
+;    |Key:inst125|                          ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst125                                                                     ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst125|7474:inst                                                           ; work         ;
+;    |Key:inst137|                          ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst137                                                                     ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst137|7474:inst                                                           ; work         ;
+;    |Key:inst139|                          ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst139                                                                     ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst139|7474:inst                                                           ; work         ;
+;    |Key:inst159|                          ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst159                                                                     ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst159|7474:inst                                                           ; work         ;
+;    |Key:inst160|                          ; 3 (1)       ; 2            ; 0           ; 0    ; 0            ; 1 (1)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst160                                                                     ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst160|7474:inst                                                           ; work         ;
+;    |Key:inst161|                          ; 3 (1)       ; 2            ; 0           ; 0    ; 0            ; 1 (1)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst161                                                                     ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst161|7474:inst                                                           ; work         ;
+;    |Key:inst169|                          ; 3 (1)       ; 2            ; 0           ; 0    ; 0            ; 1 (1)        ; 1 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst169                                                                     ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst169|7474:inst                                                           ; work         ;
+;    |Key:inst28|                           ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst28                                                                      ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst28|7474:inst                                                            ; work         ;
+;    |Key:inst50|                           ; 3 (1)       ; 2            ; 0           ; 0    ; 0            ; 1 (1)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst50                                                                      ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst50|7474:inst                                                            ; work         ;
+;    |Key:inst54|                           ; 3 (1)       ; 2            ; 0           ; 0    ; 0            ; 1 (1)        ; 2 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst54                                                                      ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 2 (2)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst54|7474:inst                                                            ; work         ;
+;    |Key:inst77|                           ; 2 (0)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 1 (0)             ; 1 (0)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst77                                                                      ; work         ;
+;       |7474:inst|                         ; 2 (2)       ; 2            ; 0           ; 0    ; 0            ; 0 (0)        ; 1 (1)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |main|Key:inst77|7474:inst                                                            ; work         ;
+;    |busmux:inst103|                       ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst103                                                                  ; work         ;
+;       |lpm_mux:$00000|                    ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst103|lpm_mux:$00000                                                   ; work         ;
+;          |mux_3fc:auto_generated|         ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst103|lpm_mux:$00000|mux_3fc:auto_generated                            ; work         ;
+;    |busmux:inst104|                       ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst104                                                                  ; work         ;
+;       |lpm_mux:$00000|                    ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst104|lpm_mux:$00000                                                   ; work         ;
+;          |mux_3fc:auto_generated|         ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst104|lpm_mux:$00000|mux_3fc:auto_generated                            ; work         ;
+;    |busmux:inst105|                       ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst105                                                                  ; work         ;
+;       |lpm_mux:$00000|                    ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst105|lpm_mux:$00000                                                   ; work         ;
+;          |mux_3fc:auto_generated|         ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst105|lpm_mux:$00000|mux_3fc:auto_generated                            ; work         ;
+;    |busmux:inst106|                       ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst106                                                                  ; work         ;
+;       |lpm_mux:$00000|                    ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst106|lpm_mux:$00000                                                   ; work         ;
+;          |mux_3fc:auto_generated|         ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst106|lpm_mux:$00000|mux_3fc:auto_generated                            ; work         ;
+;    |busmux:inst107|                       ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst107                                                                  ; work         ;
+;       |lpm_mux:$00000|                    ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst107|lpm_mux:$00000                                                   ; work         ;
+;          |mux_3fc:auto_generated|         ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst107|lpm_mux:$00000|mux_3fc:auto_generated                            ; work         ;
+;    |busmux:inst112|                       ; 34 (0)      ; 0            ; 0           ; 0    ; 0            ; 34 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst112                                                                  ; work         ;
+;       |lpm_mux:$00000|                    ; 34 (0)      ; 0            ; 0           ; 0    ; 0            ; 34 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst112|lpm_mux:$00000                                                   ; work         ;
+;          |mux_pgc:auto_generated|         ; 34 (34)     ; 0            ; 0           ; 0    ; 0            ; 34 (34)      ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst112|lpm_mux:$00000|mux_pgc:auto_generated                            ; work         ;
+;    |busmux:inst129|                       ; 4 (0)       ; 0            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst129                                                                  ; work         ;
+;       |lpm_mux:$00000|                    ; 4 (0)       ; 0            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst129|lpm_mux:$00000                                                   ; work         ;
+;          |mux_5fc:auto_generated|         ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst129|lpm_mux:$00000|mux_5fc:auto_generated                            ; work         ;
+;    |busmux:inst140|                       ; 5 (0)       ; 0            ; 0           ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst140                                                                  ; work         ;
+;       |lpm_mux:$00000|                    ; 5 (0)       ; 0            ; 0           ; 0    ; 0            ; 5 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst140|lpm_mux:$00000                                                   ; work         ;
+;          |mux_5fc:auto_generated|         ; 5 (5)       ; 0            ; 0           ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst140|lpm_mux:$00000|mux_5fc:auto_generated                            ; work         ;
+;    |busmux:inst162|                       ; 4 (0)       ; 0            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst162                                                                  ; work         ;
+;       |lpm_mux:$00000|                    ; 4 (0)       ; 0            ; 0           ; 0    ; 0            ; 4 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst162|lpm_mux:$00000                                                   ; work         ;
+;          |mux_6fc:auto_generated|         ; 4 (4)       ; 0            ; 0           ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst162|lpm_mux:$00000|mux_6fc:auto_generated                            ; work         ;
+;    |busmux:inst53|                        ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst53                                                                   ; work         ;
+;       |lpm_mux:$00000|                    ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst53|lpm_mux:$00000                                                    ; work         ;
+;          |mux_3fc:auto_generated|         ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst53|lpm_mux:$00000|mux_3fc:auto_generated                             ; work         ;
+;    |busmux:inst55|                        ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst55                                                                   ; work         ;
+;       |lpm_mux:$00000|                    ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst55|lpm_mux:$00000                                                    ; work         ;
+;          |mux_3fc:auto_generated|         ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst55|lpm_mux:$00000|mux_3fc:auto_generated                             ; work         ;
+;    |busmux:inst72|                        ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst72                                                                   ; work         ;
+;       |lpm_mux:$00000|                    ; 2 (0)       ; 0            ; 0           ; 0    ; 0            ; 2 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst72|lpm_mux:$00000                                                    ; work         ;
+;          |mux_3fc:auto_generated|         ; 2 (2)       ; 0            ; 0           ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|busmux:inst72|lpm_mux:$00000|mux_3fc:auto_generated                             ; work         ;
+;    |lpm_rom0:inst17|                      ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom0:inst17                                                                 ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component                                 ; work         ;
+;          |altsyncram_v231:auto_generated| ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_v231:auto_generated  ; work         ;
+;    |lpm_rom1:inst48|                      ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom1:inst48                                                                 ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom1:inst48|altsyncram:altsyncram_component                                 ; work         ;
+;          |altsyncram_sm31:auto_generated| ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom1:inst48|altsyncram:altsyncram_component|altsyncram_sm31:auto_generated  ; work         ;
+;    |lpm_rom2:inst51|                      ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom2:inst51                                                                 ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom2:inst51|altsyncram:altsyncram_component                                 ; work         ;
+;          |altsyncram_tq21:auto_generated| ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom2:inst51|altsyncram:altsyncram_component|altsyncram_tq21:auto_generated  ; work         ;
+;    |lpm_rom3:inst152|                     ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom3:inst152                                                                ; work         ;
+;       |altsyncram:altsyncram_component|   ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom3:inst152|altsyncram:altsyncram_component                                ; work         ;
+;          |altsyncram_j031:auto_generated| ; 0 (0)       ; 0            ; 2048        ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |main|lpm_rom3:inst152|altsyncram:altsyncram_component|altsyncram_j031:auto_generated ; work         ;
++-------------------------------------------+-------------+--------------+-------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis RAM Summary                                                                                                                                                                ;
++--------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------+
+; Name                                                                                       ; Type ; Mode ; Port A Depth ; Port A Width ; Port B Depth ; Port B Width ; Size ; MIF               ;
++--------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------+
+; lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_v231:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 128          ; 16           ; --           ; --           ; 2048 ; Data_16.mif       ;
+; lpm_rom1:inst48|altsyncram:altsyncram_component|altsyncram_sm31:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 128          ; 16           ; --           ; --           ; 2048 ; Data_Shift_16.mif ;
+; lpm_rom2:inst51|altsyncram:altsyncram_component|altsyncram_tq21:auto_generated|ALTSYNCRAM  ; AUTO ; ROM  ; 128          ; 16           ; --           ; --           ; 2048 ; myx.mif           ;
+; lpm_rom3:inst152|altsyncram:altsyncram_component|altsyncram_j031:auto_generated|ALTSYNCRAM ; AUTO ; ROM  ; 128          ; 16           ; --           ; --           ; 2048 ; heart.mif         ;
++--------------------------------------------------------------------------------------------+------+------+--------------+--------------+--------------+--------------+------+-------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 85    ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 19    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+; 4:1                ; 16 bits   ; 32 LEs        ; 32 LEs               ; 0 LEs                  ; No         ; |main|busmux:inst112|lpm_mux:$00000|mux_pgc:auto_generated|result_node[12] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Source assignments for lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_v231:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                      ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                       ;
++---------------------------------+--------------------+------+-----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Source assignments for lpm_rom1:inst48|altsyncram:altsyncram_component|altsyncram_sm31:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                      ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                       ;
++---------------------------------+--------------------+------+-----------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------+
+; Source assignments for lpm_rom2:inst51|altsyncram:altsyncram_component|altsyncram_tq21:auto_generated ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; Assignment                      ; Value              ; From ; To                                      ;
++---------------------------------+--------------------+------+-----------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                       ;
++---------------------------------+--------------------+------+-----------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Source assignments for lpm_rom3:inst152|altsyncram:altsyncram_component|altsyncram_j031:auto_generated ;
++---------------------------------+--------------------+------+------------------------------------------+
+; Assignment                      ; Value              ; From ; To                                       ;
++---------------------------------+--------------------+------+------------------------------------------+
+; OPTIMIZE_POWER_DURING_SYNTHESIS ; NORMAL_COMPILATION ; -    ; -                                        ;
++---------------------------------+--------------------+------+------------------------------------------+
+
+
++----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74163:inst1 ;
++------------------------+---------+-----------------------+
+; Parameter Name         ; Value   ; Type                  ;
++------------------------+---------+-----------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped               ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY            ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY          ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE          ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE        ;
++------------------------+---------+-----------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst140 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 3     ; Untyped                            ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74283:inst13 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74161:inst49 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74161:inst38 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74283:inst126 ;
++------------------------+---------+-------------------------+
+; Parameter Name         ; Value   ; Type                    ;
++------------------------+---------+-------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE          ;
++------------------------+---------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74161:inst122 ;
++------------------------+---------+-------------------------+
+; Parameter Name         ; Value   ; Type                    ;
++------------------------+---------+-------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE          ;
++------------------------+---------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst53 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 1     ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74151:inst78 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst129 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 3     ; Untyped                            ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74161:inst73 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74283:inst144 ;
++------------------------+---------+-------------------------+
+; Parameter Name         ; Value   ; Type                    ;
++------------------------+---------+-------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE          ;
++------------------------+---------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst112 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 16    ; Untyped                            ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst36 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 16    ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst52 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 16    ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom0:inst17 ;
++-----------------+-------+------------------------------------+
+; Parameter Name  ; Value ; Type                               ;
++-----------------+-------+------------------------------------+
+; WIDTH_BYTEENA_A ; 1     ; Untyped                            ;
+; WIDTH_BYTEENA_B ; 1     ; Untyped                            ;
++-----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom0:inst17|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------+
+; Parameter Name                     ; Value                ; Type                             ;
++------------------------------------+----------------------+----------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                          ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                   ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                          ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                          ;
+; WIDTH_A                            ; 16                   ; Untyped                          ;
+; WIDTHAD_A                          ; 7                    ; Untyped                          ;
+; NUMWORDS_A                         ; 128                  ; Untyped                          ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                          ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                          ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WIDTH_B                            ; 1                    ; Untyped                          ;
+; WIDTHAD_B                          ; 1                    ; Untyped                          ;
+; NUMWORDS_B                         ; 1                    ; Untyped                          ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                          ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                          ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                          ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                          ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                          ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                          ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                          ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                          ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                          ;
+; BYTE_SIZE                          ; 8                    ; Untyped                          ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; INIT_FILE                          ; Data_16.mif          ; Untyped                          ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                          ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                          ;
+; DEVICE_FAMILY                      ; Cyclone              ; Untyped                          ;
+; CBXI_PARAMETER                     ; altsyncram_v231      ; Untyped                          ;
++------------------------------------+----------------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst162 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 4     ; Untyped                            ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74161:inst155 ;
++------------------------+---------+-------------------------+
+; Parameter Name         ; Value   ; Type                    ;
++------------------------+---------+-------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE          ;
++------------------------+---------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom1:inst48 ;
++-----------------+-------+------------------------------------+
+; Parameter Name  ; Value ; Type                               ;
++-----------------+-------+------------------------------------+
+; WIDTH_BYTEENA_A ; 1     ; Untyped                            ;
+; WIDTH_BYTEENA_B ; 1     ; Untyped                            ;
++-----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom1:inst48|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------+
+; Parameter Name                     ; Value                ; Type                             ;
++------------------------------------+----------------------+----------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                          ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                   ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                          ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                          ;
+; WIDTH_A                            ; 16                   ; Untyped                          ;
+; WIDTHAD_A                          ; 7                    ; Untyped                          ;
+; NUMWORDS_A                         ; 128                  ; Untyped                          ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                          ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                          ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WIDTH_B                            ; 1                    ; Untyped                          ;
+; WIDTHAD_B                          ; 1                    ; Untyped                          ;
+; NUMWORDS_B                         ; 1                    ; Untyped                          ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                          ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                          ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                          ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                          ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                          ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                          ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                          ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                          ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                          ;
+; BYTE_SIZE                          ; 8                    ; Untyped                          ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; INIT_FILE                          ; Data_Shift_16.mif    ; Untyped                          ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                          ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                          ;
+; DEVICE_FAMILY                      ; Cyclone              ; Untyped                          ;
+; CBXI_PARAMETER                     ; altsyncram_sm31      ; Untyped                          ;
++------------------------------------+----------------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom2:inst51 ;
++-----------------+-------+------------------------------------+
+; Parameter Name  ; Value ; Type                               ;
++-----------------+-------+------------------------------------+
+; WIDTH_BYTEENA_A ; 1     ; Untyped                            ;
+; WIDTH_BYTEENA_B ; 1     ; Untyped                            ;
++-----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom2:inst51|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+----------------------------------+
+; Parameter Name                     ; Value                ; Type                             ;
++------------------------------------+----------------------+----------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                          ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                       ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                     ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                     ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                   ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                          ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                          ;
+; WIDTH_A                            ; 16                   ; Untyped                          ;
+; WIDTHAD_A                          ; 7                    ; Untyped                          ;
+; NUMWORDS_A                         ; 128                  ; Untyped                          ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                          ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                          ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                          ;
+; WIDTH_B                            ; 1                    ; Untyped                          ;
+; WIDTHAD_B                          ; 1                    ; Untyped                          ;
+; NUMWORDS_B                         ; 1                    ; Untyped                          ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                          ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                          ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                          ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                          ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                          ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                          ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                          ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                          ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                          ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                          ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                          ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                          ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                          ;
+; BYTE_SIZE                          ; 8                    ; Untyped                          ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                          ;
+; INIT_FILE                          ; myx.mif              ; Untyped                          ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                          ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                          ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                          ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                          ;
+; DEVICE_FAMILY                      ; Cyclone              ; Untyped                          ;
+; CBXI_PARAMETER                     ; altsyncram_tq21      ; Untyped                          ;
++------------------------------------+----------------------+----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom3:inst152 ;
++-----------------+-------+-------------------------------------+
+; Parameter Name  ; Value ; Type                                ;
++-----------------+-------+-------------------------------------+
+; WIDTH_BYTEENA_A ; 1     ; Untyped                             ;
+; WIDTH_BYTEENA_B ; 1     ; Untyped                             ;
++-----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: lpm_rom3:inst152|altsyncram:altsyncram_component ;
++------------------------------------+----------------------+-----------------------------------+
+; Parameter Name                     ; Value                ; Type                              ;
++------------------------------------+----------------------+-----------------------------------+
+; BYTE_SIZE_BLOCK                    ; 8                    ; Untyped                           ;
+; AUTO_CARRY_CHAINS                  ; ON                   ; AUTO_CARRY                        ;
+; IGNORE_CARRY_BUFFERS               ; OFF                  ; IGNORE_CARRY                      ;
+; AUTO_CASCADE_CHAINS                ; ON                   ; AUTO_CASCADE                      ;
+; IGNORE_CASCADE_BUFFERS             ; OFF                  ; IGNORE_CASCADE                    ;
+; WIDTH_BYTEENA                      ; 1                    ; Untyped                           ;
+; OPERATION_MODE                     ; ROM                  ; Untyped                           ;
+; WIDTH_A                            ; 16                   ; Untyped                           ;
+; WIDTHAD_A                          ; 7                    ; Untyped                           ;
+; NUMWORDS_A                         ; 128                  ; Untyped                           ;
+; OUTDATA_REG_A                      ; CLOCK0               ; Untyped                           ;
+; ADDRESS_ACLR_A                     ; NONE                 ; Untyped                           ;
+; OUTDATA_ACLR_A                     ; NONE                 ; Untyped                           ;
+; WRCONTROL_ACLR_A                   ; NONE                 ; Untyped                           ;
+; INDATA_ACLR_A                      ; NONE                 ; Untyped                           ;
+; BYTEENA_ACLR_A                     ; NONE                 ; Untyped                           ;
+; WIDTH_B                            ; 1                    ; Untyped                           ;
+; WIDTHAD_B                          ; 1                    ; Untyped                           ;
+; NUMWORDS_B                         ; 1                    ; Untyped                           ;
+; INDATA_REG_B                       ; CLOCK1               ; Untyped                           ;
+; WRCONTROL_WRADDRESS_REG_B          ; CLOCK1               ; Untyped                           ;
+; RDCONTROL_REG_B                    ; CLOCK1               ; Untyped                           ;
+; ADDRESS_REG_B                      ; CLOCK1               ; Untyped                           ;
+; OUTDATA_REG_B                      ; UNREGISTERED         ; Untyped                           ;
+; BYTEENA_REG_B                      ; CLOCK1               ; Untyped                           ;
+; INDATA_ACLR_B                      ; NONE                 ; Untyped                           ;
+; WRCONTROL_ACLR_B                   ; NONE                 ; Untyped                           ;
+; ADDRESS_ACLR_B                     ; NONE                 ; Untyped                           ;
+; OUTDATA_ACLR_B                     ; NONE                 ; Untyped                           ;
+; RDCONTROL_ACLR_B                   ; NONE                 ; Untyped                           ;
+; BYTEENA_ACLR_B                     ; NONE                 ; Untyped                           ;
+; WIDTH_BYTEENA_A                    ; 1                    ; Untyped                           ;
+; WIDTH_BYTEENA_B                    ; 1                    ; Untyped                           ;
+; RAM_BLOCK_TYPE                     ; AUTO                 ; Untyped                           ;
+; BYTE_SIZE                          ; 8                    ; Untyped                           ;
+; READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE            ; Untyped                           ;
+; READ_DURING_WRITE_MODE_PORT_A      ; NEW_DATA_NO_NBE_READ ; Untyped                           ;
+; READ_DURING_WRITE_MODE_PORT_B      ; NEW_DATA_NO_NBE_READ ; Untyped                           ;
+; INIT_FILE                          ; heart.mif            ; Untyped                           ;
+; INIT_FILE_LAYOUT                   ; PORT_A               ; Untyped                           ;
+; MAXIMUM_DEPTH                      ; 0                    ; Untyped                           ;
+; CLOCK_ENABLE_INPUT_A               ; NORMAL               ; Untyped                           ;
+; CLOCK_ENABLE_INPUT_B               ; NORMAL               ; Untyped                           ;
+; CLOCK_ENABLE_OUTPUT_A              ; NORMAL               ; Untyped                           ;
+; CLOCK_ENABLE_OUTPUT_B              ; NORMAL               ; Untyped                           ;
+; CLOCK_ENABLE_CORE_A                ; USE_INPUT_CLKEN      ; Untyped                           ;
+; CLOCK_ENABLE_CORE_B                ; USE_INPUT_CLKEN      ; Untyped                           ;
+; ENABLE_ECC                         ; FALSE                ; Untyped                           ;
+; DEVICE_FAMILY                      ; Cyclone              ; Untyped                           ;
+; CBXI_PARAMETER                     ; altsyncram_j031      ; Untyped                           ;
++------------------------------------+----------------------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74163:inst151 ;
++------------------------+---------+-------------------------+
+; Parameter Name         ; Value   ; Type                    ;
++------------------------+---------+-------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                 ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY              ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY            ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE            ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE          ;
++------------------------+---------+-------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst55 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 1     ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74151:inst79 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst72 ;
++----------------+-------+-----------------------------------+
+; Parameter Name ; Value ; Type                              ;
++----------------+-------+-----------------------------------+
+; WIDTH          ; 1     ; Untyped                           ;
++----------------+-------+-----------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74151:inst80 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst103 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 1     ; Untyped                            ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74151:inst81 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst104 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 1     ; Untyped                            ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74151:inst82 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst105 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 1     ; Untyped                            ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74151:inst83 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst106 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 1     ; Untyped                            ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74151:inst84 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BUSMUX:inst107 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; WIDTH          ; 1     ; Untyped                            ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------+
+; Parameter Settings for User Entity Instance: 74151:inst85 ;
++------------------------+---------+------------------------+
+; Parameter Name         ; Value   ; Type                   ;
++------------------------+---------+------------------------+
+; DEVICE_FAMILY          ; Cyclone ; Untyped                ;
+; AUTO_CARRY_CHAINS      ; ON      ; AUTO_CARRY             ;
+; IGNORE_CARRY_BUFFERS   ; OFF     ; IGNORE_CARRY           ;
+; AUTO_CASCADE_CHAINS    ; ON      ; AUTO_CASCADE           ;
+; IGNORE_CASCADE_BUFFERS ; OFF     ; IGNORE_CASCADE         ;
++------------------------+---------+------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings Tables in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------+
+; altsyncram Parameter Settings by Entity Instance                                             ;
++-------------------------------------------+--------------------------------------------------+
+; Name                                      ; Value                                            ;
++-------------------------------------------+--------------------------------------------------+
+; Number of entity instances                ; 4                                                ;
+; Entity Instance                           ; lpm_rom0:inst17|altsyncram:altsyncram_component  ;
+;     -- OPERATION_MODE                     ; ROM                                              ;
+;     -- WIDTH_A                            ; 16                                               ;
+;     -- NUMWORDS_A                         ; 128                                              ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                           ;
+;     -- WIDTH_B                            ; 1                                                ;
+;     -- NUMWORDS_B                         ; 1                                                ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                           ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                     ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                             ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                        ;
+; Entity Instance                           ; lpm_rom1:inst48|altsyncram:altsyncram_component  ;
+;     -- OPERATION_MODE                     ; ROM                                              ;
+;     -- WIDTH_A                            ; 16                                               ;
+;     -- NUMWORDS_A                         ; 128                                              ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                           ;
+;     -- WIDTH_B                            ; 1                                                ;
+;     -- NUMWORDS_B                         ; 1                                                ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                           ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                     ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                             ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                        ;
+; Entity Instance                           ; lpm_rom2:inst51|altsyncram:altsyncram_component  ;
+;     -- OPERATION_MODE                     ; ROM                                              ;
+;     -- WIDTH_A                            ; 16                                               ;
+;     -- NUMWORDS_A                         ; 128                                              ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                           ;
+;     -- WIDTH_B                            ; 1                                                ;
+;     -- NUMWORDS_B                         ; 1                                                ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                           ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                     ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                             ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                        ;
+; Entity Instance                           ; lpm_rom3:inst152|altsyncram:altsyncram_component ;
+;     -- OPERATION_MODE                     ; ROM                                              ;
+;     -- WIDTH_A                            ; 16                                               ;
+;     -- NUMWORDS_A                         ; 128                                              ;
+;     -- OUTDATA_REG_A                      ; CLOCK0                                           ;
+;     -- WIDTH_B                            ; 1                                                ;
+;     -- NUMWORDS_B                         ; 1                                                ;
+;     -- ADDRESS_REG_B                      ; CLOCK1                                           ;
+;     -- OUTDATA_REG_B                      ; UNREGISTERED                                     ;
+;     -- RAM_BLOCK_TYPE                     ; AUTO                                             ;
+;     -- READ_DURING_WRITE_MODE_MIXED_PORTS ; DONT_CARE                                        ;
++-------------------------------------------+--------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II Analysis & Synthesis
+    Info: Version 9.0 Build 235 06/17/2009 Service Pack 2 SJ Web Edition
+    Info: Processing started: Fri Nov 14 12:35:26 2025
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off KeyScanning -c KeyScanning
+Info: Found 1 design units, including 1 entities, in source file FrequencyDivider.bdf
+    Info: Found entity 1: FrequencyDivider
+Info: Found 1 design units, including 1 entities, in source file main.bdf
+    Info: Found entity 1: main
+Info: Found 1 design units, including 1 entities, in source file Key.bdf
+    Info: Found entity 1: Key
+Info: Found 1 design units, including 1 entities, in source file test.bdf
+    Info: Found entity 1: test
+Info: Elaborating entity "main" for the top level hierarchy
+Warning: Block or symbol "NOT" of instance "inst39" overlaps another block or symbol
+Warning: Block or symbol "NOT" of instance "inst41" overlaps another block or symbol
+Warning: Block or symbol "NOT" of instance "inst43" overlaps another block or symbol
+Warning: Block or symbol "NOT" of instance "inst45" overlaps another block or symbol
+Warning: Block or symbol "AND2" of instance "inst64" overlaps another block or symbol
+Warning: Block or symbol "AND2" of instance "inst66" overlaps another block or symbol
+Warning: Block or symbol "AND2" of instance "inst68" overlaps another block or symbol
+Warning: Block or symbol "AND2" of instance "inst70" overlaps another block or symbol
+Warning: Block or symbol "GND" of instance "inst31" overlaps another block or symbol
+Warning: Block or symbol "GND" of instance "inst127" overlaps another block or symbol
+Warning: Block or symbol "GND" of instance "inst146" overlaps another block or symbol
+Warning: Block or symbol "NOT" of instance "inst167" overlaps another block or symbol
+Warning: Block or symbol "NOT" of instance "inst171" overlaps another block or symbol
+Warning: Block or symbol "NOT" of instance "inst173" overlaps another block or symbol
+Info: Elaborating entity "74163" for hierarchy "74163:inst1"
+Info: Elaborated megafunction instantiation "74163:inst1"
+Info: Elaborating entity "f74163" for hierarchy "74163:inst1|f74163:sub"
+Info: Elaborated megafunction instantiation "74163:inst1|f74163:sub", which is child of megafunction instantiation "74163:inst1"
+Info: Elaborating entity "Key" for hierarchy "Key:inst159"
+Info: Elaborating entity "7474" for hierarchy "Key:inst159|7474:inst"
+Info: Elaborated megafunction instantiation "Key:inst159|7474:inst"
+Info: Elaborating entity "FrequencyDivider" for hierarchy "FrequencyDivider:inst"
+Info: Elaborating entity "7490" for hierarchy "FrequencyDivider:inst|7490:inst"
+Info: Elaborated megafunction instantiation "FrequencyDivider:inst|7490:inst"
+Info: Elaborating entity "74138" for hierarchy "74138:inst25"
+Info: Elaborated megafunction instantiation "74138:inst25"
+Info: Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst140"
+Info: Elaborated megafunction instantiation "BUSMUX:inst140"
+Info: Instantiated megafunction "BUSMUX:inst140" with the following parameter:
+    Info: Parameter "WIDTH" = "3"
+Info: Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst140|lpm_mux:$00000"
+Info: Elaborated megafunction instantiation "BUSMUX:inst140|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst140"
+Info: Found 1 design units, including 1 entities, in source file db/mux_5fc.tdf
+    Info: Found entity 1: mux_5fc
+Info: Elaborating entity "mux_5fc" for hierarchy "BUSMUX:inst140|lpm_mux:$00000|mux_5fc:auto_generated"
+Info: Elaborating entity "74283" for hierarchy "74283:inst13"
+Info: Elaborated megafunction instantiation "74283:inst13"
+Info: Elaborating entity "f74283" for hierarchy "74283:inst13|f74283:sub"
+Info: Elaborated megafunction instantiation "74283:inst13|f74283:sub", which is child of megafunction instantiation "74283:inst13"
+Info: Elaborating entity "74161" for hierarchy "74161:inst49"
+Info: Elaborated megafunction instantiation "74161:inst49"
+Info: Elaborating entity "f74161" for hierarchy "74161:inst49|f74161:sub"
+Info: Elaborated megafunction instantiation "74161:inst49|f74161:sub", which is child of megafunction instantiation "74161:inst49"
+Info: Elaborating entity "74161" for hierarchy "74161:inst38"
+Info: Elaborated megafunction instantiation "74161:inst38"
+Info: Elaborating entity "74283" for hierarchy "74283:inst126"
+Info: Elaborated megafunction instantiation "74283:inst126"
+Info: Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst53"
+Info: Elaborated megafunction instantiation "BUSMUX:inst53"
+Info: Instantiated megafunction "BUSMUX:inst53" with the following parameter:
+    Info: Parameter "WIDTH" = "1"
+Info: Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst53|lpm_mux:$00000"
+Info: Elaborated megafunction instantiation "BUSMUX:inst53|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst53"
+Info: Found 1 design units, including 1 entities, in source file db/mux_3fc.tdf
+    Info: Found entity 1: mux_3fc
+Info: Elaborating entity "mux_3fc" for hierarchy "BUSMUX:inst53|lpm_mux:$00000|mux_3fc:auto_generated"
+Info: Elaborating entity "74151" for hierarchy "74151:inst78"
+Info: Elaborated megafunction instantiation "74151:inst78"
+Info: Elaborating entity "f74151" for hierarchy "74151:inst78|f74151:sub"
+Info: Elaborated megafunction instantiation "74151:inst78|f74151:sub", which is child of megafunction instantiation "74151:inst78"
+Info: Elaborating entity "74283" for hierarchy "74283:inst144"
+Info: Elaborated megafunction instantiation "74283:inst144"
+Info: Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst112"
+Info: Elaborated megafunction instantiation "BUSMUX:inst112"
+Info: Instantiated megafunction "BUSMUX:inst112" with the following parameter:
+    Info: Parameter "WIDTH" = "16"
+Info: Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst112|lpm_mux:$00000"
+Info: Elaborated megafunction instantiation "BUSMUX:inst112|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst112"
+Info: Found 1 design units, including 1 entities, in source file db/mux_pgc.tdf
+    Info: Found entity 1: mux_pgc
+Info: Elaborating entity "mux_pgc" for hierarchy "BUSMUX:inst112|lpm_mux:$00000|mux_pgc:auto_generated"
+Warning: Using design file lpm_rom0.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_rom0
+Info: Elaborating entity "lpm_rom0" for hierarchy "lpm_rom0:inst17"
+Info: Elaborating entity "altsyncram" for hierarchy "lpm_rom0:inst17|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "lpm_rom0:inst17|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "lpm_rom0:inst17|altsyncram:altsyncram_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "altsyncram"
+    Info: Parameter "LPM_HINT" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "INTENDED_DEVICE_FAMILY" = "Cyclone"
+    Info: Parameter "OPERATION_MODE" = "ROM"
+    Info: Parameter "WIDTH_A" = "16"
+    Info: Parameter "WIDTHAD_A" = "7"
+    Info: Parameter "NUMWORDS_A" = "128"
+    Info: Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info: Parameter "OUTDATA_REG_A" = "CLOCK0"
+    Info: Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info: Parameter "INIT_FILE" = "Data_16.mif"
+    Info: Parameter "WIDTH_BYTEENA_A" = "1"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_v231.tdf
+    Info: Found entity 1: altsyncram_v231
+Info: Elaborating entity "altsyncram_v231" for hierarchy "lpm_rom0:inst17|altsyncram:altsyncram_component|altsyncram_v231:auto_generated"
+Info: Elaborating entity "BUSMUX" for hierarchy "BUSMUX:inst162"
+Info: Elaborated megafunction instantiation "BUSMUX:inst162"
+Info: Instantiated megafunction "BUSMUX:inst162" with the following parameter:
+    Info: Parameter "WIDTH" = "4"
+Info: Elaborating entity "lpm_mux" for hierarchy "BUSMUX:inst162|lpm_mux:$00000"
+Info: Elaborated megafunction instantiation "BUSMUX:inst162|lpm_mux:$00000", which is child of megafunction instantiation "BUSMUX:inst162"
+Info: Found 1 design units, including 1 entities, in source file db/mux_6fc.tdf
+    Info: Found entity 1: mux_6fc
+Info: Elaborating entity "mux_6fc" for hierarchy "BUSMUX:inst162|lpm_mux:$00000|mux_6fc:auto_generated"
+Info: Elaborating entity "74175" for hierarchy "74175:inst18"
+Info: Elaborated megafunction instantiation "74175:inst18"
+Info: Elaborating entity "74148" for hierarchy "74148:inst166"
+Info: Elaborated megafunction instantiation "74148:inst166"
+Warning: Using design file lpm_rom1.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_rom1
+Info: Elaborating entity "lpm_rom1" for hierarchy "lpm_rom1:inst48"
+Info: Elaborating entity "altsyncram" for hierarchy "lpm_rom1:inst48|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "lpm_rom1:inst48|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "lpm_rom1:inst48|altsyncram:altsyncram_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "altsyncram"
+    Info: Parameter "LPM_HINT" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "INTENDED_DEVICE_FAMILY" = "Cyclone"
+    Info: Parameter "OPERATION_MODE" = "ROM"
+    Info: Parameter "WIDTH_A" = "16"
+    Info: Parameter "WIDTHAD_A" = "7"
+    Info: Parameter "NUMWORDS_A" = "128"
+    Info: Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info: Parameter "OUTDATA_REG_A" = "CLOCK0"
+    Info: Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info: Parameter "INIT_FILE" = "Data_Shift_16.mif"
+    Info: Parameter "WIDTH_BYTEENA_A" = "1"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_sm31.tdf
+    Info: Found entity 1: altsyncram_sm31
+Info: Elaborating entity "altsyncram_sm31" for hierarchy "lpm_rom1:inst48|altsyncram:altsyncram_component|altsyncram_sm31:auto_generated"
+Warning: Using design file lpm_rom2.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_rom2
+Info: Elaborating entity "lpm_rom2" for hierarchy "lpm_rom2:inst51"
+Info: Elaborating entity "altsyncram" for hierarchy "lpm_rom2:inst51|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "lpm_rom2:inst51|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "lpm_rom2:inst51|altsyncram:altsyncram_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "altsyncram"
+    Info: Parameter "LPM_HINT" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "INTENDED_DEVICE_FAMILY" = "Cyclone"
+    Info: Parameter "OPERATION_MODE" = "ROM"
+    Info: Parameter "WIDTH_A" = "16"
+    Info: Parameter "WIDTHAD_A" = "7"
+    Info: Parameter "NUMWORDS_A" = "128"
+    Info: Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info: Parameter "OUTDATA_REG_A" = "CLOCK0"
+    Info: Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info: Parameter "INIT_FILE" = "myx.mif"
+    Info: Parameter "WIDTH_BYTEENA_A" = "1"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_tq21.tdf
+    Info: Found entity 1: altsyncram_tq21
+Info: Elaborating entity "altsyncram_tq21" for hierarchy "lpm_rom2:inst51|altsyncram:altsyncram_component|altsyncram_tq21:auto_generated"
+Warning: Using design file lpm_rom3.tdf, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info: Found entity 1: lpm_rom3
+Info: Elaborating entity "lpm_rom3" for hierarchy "lpm_rom3:inst152"
+Info: Elaborating entity "altsyncram" for hierarchy "lpm_rom3:inst152|altsyncram:altsyncram_component"
+Info: Elaborated megafunction instantiation "lpm_rom3:inst152|altsyncram:altsyncram_component"
+Info: Instantiated megafunction "lpm_rom3:inst152|altsyncram:altsyncram_component" with the following parameter:
+    Info: Parameter "LPM_TYPE" = "altsyncram"
+    Info: Parameter "LPM_HINT" = "ENABLE_RUNTIME_MOD=NO"
+    Info: Parameter "INTENDED_DEVICE_FAMILY" = "Cyclone"
+    Info: Parameter "OPERATION_MODE" = "ROM"
+    Info: Parameter "WIDTH_A" = "16"
+    Info: Parameter "WIDTHAD_A" = "7"
+    Info: Parameter "NUMWORDS_A" = "128"
+    Info: Parameter "ADDRESS_ACLR_A" = "NONE"
+    Info: Parameter "OUTDATA_REG_A" = "CLOCK0"
+    Info: Parameter "OUTDATA_ACLR_A" = "NONE"
+    Info: Parameter "INIT_FILE" = "heart.mif"
+    Info: Parameter "WIDTH_BYTEENA_A" = "1"
+Info: Found 1 design units, including 1 entities, in source file db/altsyncram_j031.tdf
+    Info: Found entity 1: altsyncram_j031
+Info: Elaborating entity "altsyncram_j031" for hierarchy "lpm_rom3:inst152|altsyncram:altsyncram_component|altsyncram_j031:auto_generated"
+Info: Elaborating entity "161mux" for hierarchy "161mux:inst94"
+Info: Elaborated megafunction instantiation "161mux:inst94"
+Info: Elaborating entity "74163" for hierarchy "74163:inst151"
+Info: Elaborated megafunction instantiation "74163:inst151"
+Info: Ignored 67 buffer(s)
+    Info: Ignored 16 CASCADE buffer(s)
+    Info: Ignored 51 SOFT buffer(s)
+Info: Ignored 6 buffer(s)
+    Info: Ignored 6 SOFT buffer(s)
+Warning: Output pins are stuck at VCC or GND
+    Warning (13410): Pin "DE3" is stuck at GND
+    Warning (13410): Pin "ACOM" is stuck at VCC
+Info: Converted 10 single input CARRY primitives to CARRY_SUM primitives
+Warning: Ignored 10 CARRY_SUM primitives
+    Warning: Ignored 7 CARRY_SUM primitive(s) -- cannot place fan-out logic in single logic cell
+        Warning: Can't place logic fed by CARRY_SUM primitive "74283:inst13|f74283:sub|88~0" into a single logic cell
+            Warning: Node "busmux:inst140|lpm_mux:$00000|mux_5fc:auto_generated|result_node[1]~9" of type LUT
+            Warning: Node "74283:inst13|f74283:sub|89~0" of type CARRY_SUM
+        Warning: Can't place logic fed by CARRY_SUM primitive "74283:inst144|f74283:sub|88~0" into a single logic cell
+            Warning: Node "busmux:inst129|lpm_mux:$00000|mux_5fc:auto_generated|result_node[1]~8" of type LUT
+            Warning: Node "74283:inst144|f74283:sub|89~0" of type CARRY_SUM
+        Warning: Can't place logic fed by CARRY_SUM primitive "74283:inst126|f74283:sub|88~0" into a single logic cell
+            Warning: Node "74283:inst126|f74283:sub|89~0" of type CARRY_SUM
+            Warning: Node "busmux:inst140|lpm_mux:$00000|mux_5fc:auto_generated|result_node[1]~13" of type LUT
+        Warning: Can't place logic fed by CARRY_SUM primitive "74163:inst1|f74163:sub|74~0" into a single logic cell
+            Warning: Node "74163:inst1|f74163:sub|106" of type LUT
+            Warning: Node "74163:inst1|f74163:sub|109~0" of type LUT
+        Warning: Can't place logic fed by CARRY_SUM primitive "74163:inst1|f74163:sub|140~0" into a single logic cell
+            Warning: Node "74163:inst1|f74163:sub|73" of type LUT
+            Warning: Node "74163:inst1|f74163:sub|72~0" of type LUT
+        Warning: Can't place logic fed by CARRY_SUM primitive "74163:inst151|f74163:sub|107~0" into a single logic cell
+            Warning: Node "74163:inst151|f74163:sub|117" of type LUT
+            Warning: Node "74163:inst151|f74163:sub|120" of type LUT
+        Warning: Can't place logic fed by CARRY_SUM primitive "74163:inst151|f74163:sub|74~0" into a single logic cell
+            Warning: Node "74163:inst151|f74163:sub|106" of type LUT
+            Warning: Node "74163:inst151|f74163:sub|109" of type LUT
+    Warning: Ignored 3 CARRY_SUM primitives -- logic cell requires more inputs than it can contain
+        Warning: Can't place CARRY primitive "74283:inst126|f74283:sub|89~0" -- logic cell requires more inputs than it can contain
+        Warning: Can't place CARRY primitive "74283:inst144|f74283:sub|89~0" -- logic cell requires more inputs than it can contain
+        Warning: Can't place CARRY primitive "74283:inst13|f74283:sub|89~0" -- logic cell requires more inputs than it can contain
+Info: Implemented 364 device resources after synthesis - the final resource count might be different
+    Info: Implemented 11 input pins
+    Info: Implemented 30 output pins
+    Info: Implemented 259 logic cells
+    Info: Implemented 64 RAM segments
+Info: Quartus II Analysis & Synthesis was successful. 0 errors, 48 warnings
+    Info: Peak virtual memory: 244 megabytes
+    Info: Processing ended: Fri Nov 14 12:35:28 2025
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:02
+
+

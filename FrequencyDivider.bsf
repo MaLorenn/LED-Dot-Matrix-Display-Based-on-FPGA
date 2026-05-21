@@ -1,0 +1,92 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 16 16 184 208)
+	(text "FrequencyDivider" (rect 5 0 105 14)(font "Arial" (font_size 8)))
+	(text "inst" (rect 8 176 25 188)(font "Arial" ))
+	(port
+		(pt 0 32)
+		(input)
+		(text "OSC_10MHz" (rect 0 0 71 14)(font "Arial" (font_size 8)))
+		(text "OSC_10MHz" (rect 21 27 92 41)(font "Arial" (font_size 8)))
+		(line (pt 0 32)(pt 16 32)(line_width 1))
+	)
+	(port
+		(pt 168 32)
+		(output)
+		(text "1MHz" (rect 0 0 31 14)(font "Arial" (font_size 8)))
+		(text "1MHz" (rect 116 27 147 41)(font "Arial" (font_size 8)))
+		(line (pt 168 32)(pt 152 32)(line_width 1))
+	)
+	(port
+		(pt 168 48)
+		(output)
+		(text "100kHz" (rect 0 0 42 14)(font "Arial" (font_size 8)))
+		(text "100kHz" (rect 105 43 147 57)(font "Arial" (font_size 8)))
+		(line (pt 168 48)(pt 152 48)(line_width 1))
+	)
+	(port
+		(pt 168 64)
+		(output)
+		(text "10kHz" (rect 0 0 35 14)(font "Arial" (font_size 8)))
+		(text "10kHz" (rect 112 59 147 73)(font "Arial" (font_size 8)))
+		(line (pt 168 64)(pt 152 64)(line_width 1))
+	)
+	(port
+		(pt 168 80)
+		(output)
+		(text "1kHz" (rect 0 0 28 14)(font "Arial" (font_size 8)))
+		(text "1kHz" (rect 119 75 147 89)(font "Arial" (font_size 8)))
+		(line (pt 168 80)(pt 152 80)(line_width 1))
+	)
+	(port
+		(pt 168 96)
+		(output)
+		(text "500Hz" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "500Hz" (rect 111 91 147 105)(font "Arial" (font_size 8)))
+		(line (pt 168 96)(pt 152 96)(line_width 1))
+	)
+	(port
+		(pt 168 112)
+		(output)
+		(text "100Hz" (rect 0 0 36 14)(font "Arial" (font_size 8)))
+		(text "100Hz" (rect 111 107 147 121)(font "Arial" (font_size 8)))
+		(line (pt 168 112)(pt 152 112)(line_width 1))
+	)
+	(port
+		(pt 168 128)
+		(output)
+		(text "10Hz" (rect 0 0 29 14)(font "Arial" (font_size 8)))
+		(text "10Hz" (rect 118 123 147 137)(font "Arial" (font_size 8)))
+		(line (pt 168 128)(pt 152 128)(line_width 1))
+	)
+	(port
+		(pt 168 144)
+		(output)
+		(text "1Hz" (rect 0 0 22 14)(font "Arial" (font_size 8)))
+		(text "1Hz" (rect 125 139 147 153)(font "Arial" (font_size 8)))
+		(line (pt 168 144)(pt 152 144)(line_width 1))
+	)
+	(drawing
+		(rectangle (rect 16 16 152 176)(line_width 1))
+	)
+)
