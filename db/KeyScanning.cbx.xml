@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="KeyScanning">
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst103|lpm_mux:$00000" CBX_FILE_NAME="mux_3fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst107|lpm_mux:$00000" CBX_FILE_NAME="mux_3fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst112|lpm_mux:$00000" CBX_FILE_NAME="mux_pgc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst129|lpm_mux:$00000" CBX_FILE_NAME="mux_5fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst53|lpm_mux:$00000" CBX_FILE_NAME="mux_3fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst104|lpm_mux:$00000" CBX_FILE_NAME="mux_3fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst140|lpm_mux:$00000" CBX_FILE_NAME="mux_5fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst162|lpm_mux:$00000" CBX_FILE_NAME="mux_6fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst36|lpm_mux:$00000" CBX_FILE_NAME="mux_pgc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst72|lpm_mux:$00000" CBX_FILE_NAME="mux_3fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|lpm_rom3:inst152|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_j031.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst105|lpm_mux:$00000" CBX_FILE_NAME="mux_3fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst55|lpm_mux:$00000" CBX_FILE_NAME="mux_3fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|lpm_rom0:inst17|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v231.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|lpm_rom2:inst51|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tq21.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst106|lpm_mux:$00000" CBX_FILE_NAME="mux_3fc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|BUSMUX:inst52|lpm_mux:$00000" CBX_FILE_NAME="mux_pgc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|main|lpm_rom1:inst48|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_sm31.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
